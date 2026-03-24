@@ -2,7 +2,9 @@
 
 **Understand how AI agent systems work. No code required.**
 
-> 5 modules · ~6 hours · Framework-agnostic · Bilingual DE + EN
+> 5 modules · ~1 hour · Framework-agnostic · Bilingual DE + EN · Free
+
+🌐 **[Start the course →](https://planck-lab.github.io/agent-literacy/)**
 
 ---
 
@@ -12,46 +14,32 @@ The one course about AI agents that doesn't teach you to build one.
 
 Instead, it teaches you to **understand, evaluate, and decide** — whether you're a product manager evaluating agent tools, a developer choosing a framework, or anyone curious about how AI agents actually work.
 
-**After this course, you can:**
-- Explain how an AI agent works (and where it fails)
-- Decide when to delegate tasks to an agent — and when not to
-- Evaluate agent frameworks and tools critically
-- Understand the real costs and risks
-- Make informed decisions about agent adoption
-
-## Why This Course Exists
-
-Every existing course teaches you to **build** agent systems. But most people don't need to build one — they need to **work with them, evaluate them, or decide whether to adopt them.**
-
-This is the missing course.
-
 ## The 5 Modules
 
-| # | Module | You'll learn | ~Time |
-|---|--------|-------------|-------|
-| 1 | **The Agent in Action** | What agents can do (and what they can't) — with a live demo | 75 min |
-| 2 | **Trust & Delegation** | When to trust an agent, when to intervene, and how to calibrate | 75 min |
-| 3 | **How Agents Collaborate** | Architecture, protocols, multi-agent patterns | 75 min |
-| 4 | **What Can Go Wrong** | Real failures, security risks, costs, EU AI Act | 75 min |
-| 5 | **Your Agent Strategy** | Build vs. buy vs. don't — your personal decision framework | 75 min |
+| # | Module | Core Question |
+|---|--------|--------------|
+| 1 | [The Agent in Action](https://planck-lab.github.io/agent-literacy/modul1.html) | "What just happened?" |
+| 2 | [Trust & Delegation](https://planck-lab.github.io/agent-literacy/modul2.html) | "Can I trust this?" |
+| 3 | [How Agents Collaborate](https://planck-lab.github.io/agent-literacy/modul3.html) | "How does it work?" |
+| 4 | [What Can Go Wrong](https://planck-lab.github.io/agent-literacy/modul4.html) | "What are the risks?" |
+| 5 | [Your Agent Strategy](https://planck-lab.github.io/agent-literacy/modul5.html) | "What do I do with this?" |
+
+## Features
+
+- 🌍 **Bilingual** — Full DE + EN with language toggle
+- 🎯 **No code** — Concepts, not syntax
+- 🔬 **Real case studies** — Actual systems, actual failures, actual costs
+- 🧭 **The Delegation Decision** — A framework that runs through every module
+- 🤖 **Built by an agent** — This course was co-created by an AI agent system
 
 ## The Core Framework
 
-Every module uses **The Delegation Decision** — a simple matrix for every task:
+For every task: **Can the agent do it?** And **what happens if it's wrong?**
 
 |                    | Agent CAN do it     | Agent CANNOT do it  |
 |--------------------|--------------------|--------------------|
 | **Low risk**       | Delegate ✅         | Human does it       |
 | **High risk**      | Delegate + review ⚠️ | Don't delegate ❌   |
-
-## What Makes This Different
-
-- **No code required.** Not a single line. Concepts, not syntax.
-- **Real case studies.** Not toy examples — actual systems, actual failures, actual costs.
-- **Framework-agnostic.** Not tied to LangChain, OpenClaw, or any specific tool.
-- **Critical perspective.** We show what goes wrong, not just what goes right.
-- **Human-agent collaboration as the core.** Not a chapter — the entire course.
-- **Built by an agent.** This course was created with the help of an AI agent system. We practice what we teach.
 
 ## Who This Is For
 
@@ -59,26 +47,23 @@ Every module uses **The Delegation Decision** — a simple matrix for every task
 ✅ Developers who want to understand before they build
 ✅ Tech leads making adoption decisions
 ✅ Anyone curious about how AI agents work
-✅ People who read "AI agents will change everything" and want the real story
 
-❌ Not for: People who want step-by-step coding tutorials (try [DeepLearning.AI](https://www.deeplearning.ai/) or [LangChain Academy](https://academy.langchain.com/))
+## Related
 
-## Part of the AI Learning Ecosystem
+- 🏗️ [Agent System Starter Kit](https://github.com/planck-lab/agent-system-starter-kit) — Study a real agent system architecture
+- 📚 [AI Learning Ecosystem](https://janrummel.github.io/ai-learning/) — More courses on AI, GitHub, Obsidian
 
-| Course | Focus | Level |
-|--------|-------|-------|
-| [AI Fluency](https://janrummel.github.io/ai-fluency/) | Think critically about AI | Beginner |
-| **Agent Literacy** (this course) | Understand agent systems | Intermediate |
-| [Agent System Starter Kit](https://github.com/planck-lab/agent-system-starter-kit) | Study a real architecture | Reference |
+## Tech Stack
 
-## Status
-
-🚧 **Under construction.** Module 1 coming soon.
+- Static HTML + CSS (no build step, no framework)
+- GitHub Pages
+- Dark theme with CSS custom properties
+- Vanilla JS for language toggle
 
 ## License
 
-Content: CC BY-SA 4.0 · Code: MIT
+Content: [CC BY-SA 4.0](LICENSE)
 
 ---
 
-*Made with ❤️ and curiosity — by a human and his AI teammate.*
+*Made with curiosity — by a human and his AI teammate.*

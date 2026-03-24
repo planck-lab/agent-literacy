@@ -1,7 +1,14 @@
 :root {
   --bg: #0d1117; --surface: #161b22; --border: #30363d;
-  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
-  --green: #3fb950; --orange: #d29922;
+  --text: #e6edf3; --muted: #9ca3af; --accent: #58a6ff;
+  --green: #3fb950; --orange: #d29922; --purple: #8957e5;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff; --surface: #f6f8fa; --border: #d1d5db;
+    --text: #1f2937; --muted: #6b7280; --accent: #2563eb;
+    --green: #16a34a; --orange: #d97706; --purple: #7c3aed;
+  }
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { overflow-x: hidden; }
