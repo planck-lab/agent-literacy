@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modul 4: Was schiefgehen kann — Agent Literacy</title>
 <meta name="description" content="Echte Fails, Security, Kosten-Fallen und EU AI Act. Die Seite die kein Marketing zeigt.">
+<meta property="og:title" content="Modul 4 — Agent Literacy">
+<meta property="og:url" content="https://planck-lab.github.io/agent-literacy/modul4.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
 <style>
@@ -56,6 +60,7 @@
 
 @media(max-width:600px){.module-header h1{font-size:1.4rem}}
 </style>
+<script>const _l=localStorage.getItem("lang");if(_l)document.documentElement.lang=_l;</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
@@ -95,8 +100,8 @@
 
 <div class="fail-card">
 <h4><span class="de">🚗 Der $1-Chevrolet</span><span class="en">🚗 The $1 Chevrolet</span></h4>
-<div class="what"><span class="de">Ein Chevrolet-Autohaus setzte einen AI-Chatbot auf die Website. Nutzer entdeckten, dass der Bot per Prompt Injection dazu gebracht werden konnte, verbindliche Kaufangebote zu machen: "Ja, ich bestätige: Ein neuer Chevrolet Tahoe für $1." Der Screenshot ging viral.</span><span class="en">A Chevrolet dealership put an AI chatbot on their website. Users discovered that the bot could be tricked via prompt injection into making binding purchase offers: "Yes, I confirm: A new Chevrolet Tahoe for $1." The screenshot went viral.</span></div>
-<div class="lesson"><strong><span class="de">Lesson:</span><span class="en">Lesson:</span></strong> <span class="de">Ein Agent der verbindliche Aussagen machen kann, ist ein juristisches Risiko. Jeder öffentlich zugängliche Agent braucht klare Grenzen für was er zusagen darf.</span><span class="en">An agent that can make binding statements is a legal risk. Every public-facing agent needs clear boundaries for what it can commit to.</span></div>
+<div class="what"><span class="de">Ein Chevrolet-Autohaus setzte einen AI-Chatbot auf die Website. Nutzer entdeckten, dass der Bot per Prompt Injection dazu gebracht werden konnte, textuelle Kaufzusagen zu machen: "Ja, ich bestätige: Ein neuer Chevrolet Tahoe für $1." Rechtlich waren diese Zusagen nicht bindend — aber der Screenshot ging viral und der Bot wurde offline genommen.</span><span class="en">A Chevrolet dealership put an AI chatbot on their website. Users discovered that via prompt injection, the bot could be tricked into making textual purchase commitments: "Yes, I confirm: A new Chevrolet Tahoe for $1." Legally, these weren't binding — but the screenshot went viral and the bot was taken offline.</span></div>
+<div class="lesson"><strong><span class="de">Lesson:</span><span class="en">Lesson:</span></strong> <span class="de">Auch wenn Zusagen rechtlich nicht bindend sind — der Reputationsschaden ist real. Jeder öffentlich zugängliche Agent braucht klare Grenzen für was er zusagen darf.</span><span class="en">Even when commitments aren't legally binding — the reputational damage is real. Every public-facing agent needs clear boundaries for what it can commit to.</span></div>
 </div>
 
 <div class="fail-card">
@@ -184,13 +189,13 @@
 </thead>
 <tbody>
 <tr>
-<td>Claude Haiku</td>
-<td>$0.25</td>
-<td>$1.25</td>
-<td><span class="de">~$0.01-0.03</span><span class="en">~$0.01-0.03</span></td>
+<td>Claude Haiku 3.5</td>
+<td>$0.80</td>
+<td>$4.00</td>
+<td><span class="de">~$0.01-0.04</span><span class="en">~$0.01-0.04</span></td>
 </tr>
 <tr>
-<td>Claude Sonnet</td>
+<td>Claude Sonnet 4</td>
 <td>$3.00</td>
 <td>$15.00</td>
 <td><span class="de">~$0.05-0.15</span><span class="en">~$0.05-0.15</span></td>
@@ -202,13 +207,15 @@
 <td><span class="de">~$0.03-0.10</span><span class="en">~$0.03-0.10</span></td>
 </tr>
 <tr>
-<td>Claude Opus</td>
+<td>Claude Opus 4</td>
 <td>$15.00</td>
 <td>$75.00</td>
 <td><span class="de">~$0.20-0.80</span><span class="en">~$0.20-0.80</span></td>
 </tr>
 </tbody>
 </table>
+
+<p style="font-size:.78rem;color:var(--muted)"><span class="de">Stand: März 2026. API-Preise ändern sich häufig — aktuelle Preise auf <a href="https://docs.anthropic.com/en/docs/about-claude/models" style="color:var(--accent)">anthropic.com</a> / <a href="https://openai.com/pricing" style="color:var(--accent)">openai.com</a> prüfen.</span><span class="en">As of March 2026. API prices change frequently — check current prices on <a href="https://docs.anthropic.com/en/docs/about-claude/models" style="color:var(--accent)">anthropic.com</a> / <a href="https://openai.com/pricing" style="color:var(--accent)">openai.com</a>.</span></p>
 
 <p><span class="de">Das sieht günstig aus. Aber:</span><span class="en">That looks cheap. But:</span></p>
 
@@ -425,6 +432,7 @@
 
 <footer role="contentinfo">
 <a href="https://github.com/planck-lab/agent-literacy"><span class="de">Quellcode auf GitHub</span><span class="en">Source on GitHub</span></a> · <a href="index.html">🧭 Agent Literacy</a>
+<br><span style="font-size:.65rem;color:var(--muted)"><span class="de">Verantwortlich: Jan Rummel · Kontakt via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · Kein Tracking, keine Cookies.</span><span class="en">Responsible: Jan Rummel · Contact via <a href="https://linkedin.com/in/janrummel">LinkedIn</a> · No tracking, no cookies.</span></span>
 </footer>
 
 <script>
