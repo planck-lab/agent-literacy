@@ -225,6 +225,11 @@ tr:hover td { background: rgba(88,166,255,0.03); }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
+.back-to-top{position:fixed;bottom:1.5rem;right:1.5rem;background:var(--surface);border:1px solid var(--border);color:var(--muted);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1.1rem;display:none;align-items:center;justify-content:center;z-index:90;transition:all .2s}
+.back-to-top:hover{color:var(--accent);border-color:var(--accent)}
+.breadcrumb{font-size:.78rem;color:var(--muted);margin-bottom:.5rem}
+.breadcrumb a{color:var(--muted)}
+.breadcrumb a:hover{color:var(--accent)}
 @media (max-width: 600px) {
   .container { padding: 4rem 1.25rem 1.5rem; }
   h1 { font-size: 1.6rem; }

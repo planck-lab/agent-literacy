@@ -207,4 +207,6 @@
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
+<button class="back-to-top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>const b=document.querySelector(".back-to-top");window.addEventListener("scroll",()=>{b.style.display=window.scrollY>400?"flex":"none"})</script>
 </body></html>
