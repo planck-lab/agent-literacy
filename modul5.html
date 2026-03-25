@@ -8,8 +8,8 @@
 <meta property="og:title" content="Modul 5 — Agent Literacy">
 <meta property="og:url" content="https://planck-lab.github.io/agent-literacy/modul5.html">
 <meta property="og:type" content="article">
-<meta name="twitter:card" content="summary">
-<meta property="og:image" content="https://planck-lab.github.io/agent-literacy/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://planck-lab.github.io/agent-literacy/og-modul5.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <link rel="stylesheet" href="style.css">
@@ -69,8 +69,8 @@
 <body>
 <a href="#main-content" class="skip-link"><span class="de">Zum Inhalt springen</span><span class="en">Skip to content</span></a>
 <div class="lang-switch" role="navigation" aria-label="Language">
-<button class="lang-btn active" onclick="setLang('de')">DE</button>
-<button class="lang-btn" onclick="setLang('en')">EN</button>
+<button class="lang-btn active" onclick="setLang('de')" aria-label="Switch to German">DE</button>
+<button class="lang-btn" onclick="setLang('en')" aria-label="Switch to English">EN</button>
 </div>
 
 <div class="container" style="max-width:760px;margin:0 auto;padding:3rem 2rem 2rem">
@@ -269,7 +269,7 @@
 <div class="future-card">
 <h4><span class="de">🔌 MCP wird allgegenwärtig</span><span class="en">🔌 MCP becomes ubiquitous</span></h4>
 <div class="timeline"><span class="de">Bereits im Gange (2025-2026)</span><span class="en">Already happening (2025-2026)</span></div>
-<p><span class="de">Model Context Protocol hatte Ende 2025 bereits ~97M monatliche SDK-Downloads (Quelle: MCP Blog, Dez. 2025 — umfasst alle npm/pip-Installationen inkl. CI/CD). Es wird der De-facto-Standard für Agent↔Tool-Kommunikation. Die Frage ist nicht ob, sondern wie schnell.</span><span class="en">Model Context Protocol already had ~97M monthly SDK downloads by late 2025 (Source: MCP Blog, Dec 2025 — includes all npm/pip installs incl. CI/CD). It's becoming the de facto standard for Agent↔Tool communication. The question isn't if, but how fast.</span></p>
+<p><span class="de">Model Context Protocol hatte Ende 2025 bereits ~97M monatliche SDK-Downloads (Quelle: <a href="http://blog.modelcontextprotocol.io/posts/2025-12-09-mcp-joins-agentic-ai-foundation/" style="color:var(--accent)">MCP Blog, Dez. 2025</a> — umfasst alle npm/pip-Installationen inkl. CI/CD). Es wird der De-facto-Standard für Agent↔Tool-Kommunikation. Die Frage ist nicht ob, sondern wie schnell.</span><span class="en">Model Context Protocol already had ~97M monthly SDK downloads by late 2025 (Source: <a href="http://blog.modelcontextprotocol.io/posts/2025-12-09-mcp-joins-agentic-ai-foundation/" style="color:var(--accent)">MCP Blog, Dec 2025</a> — includes all npm/pip installs incl. CI/CD). It's becoming the de facto standard for Agent↔Tool communication. The question isn't if, but how fast.</span></p>
 </div>
 
 <div class="future-card">
@@ -436,6 +436,6 @@
 function setLang(l){document.documentElement.lang=l;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');localStorage.setItem('lang',l)}
 const s=localStorage.getItem('lang');if(s)setLang(s);
 </script>
-<button class="back-to-top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button class="back-to-top" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 <script>const b=document.querySelector(".back-to-top");window.addEventListener("scroll",()=>{b.style.display=window.scrollY>400?"flex":"none"})</script>
 </body></html>
