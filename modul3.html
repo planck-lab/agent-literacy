@@ -240,36 +240,34 @@
 
 <p><span class="de">Nicht jeder Agent arbeitet allein. In komplexen Systemen arbeiten mehrere Agents zusammen — aber nach unterschiedlichen Mustern:</span><span class="en">Not every agent works alone. In complex systems, multiple agents work together — but following different patterns:</span></p>
 
-<figure style="max-width:700px;margin:1.5rem auto;text-align:center">
-<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;height:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1rem">
-<defs>
-<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-<polygon points="0 0, 10 3.5, 0 7" fill="var(--muted)" />
-</marker>
-</defs>
-<!-- Agent A (Build) -->
-<circle cx="150" cy="80" r="40" fill="rgba(88,166,255,.15)" stroke="var(--accent)" stroke-width="2"/>
-<text x="150" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--accent)">Agent A</text>
-<text x="150" y="92" text-anchor="middle" font-size="10" fill="var(--muted)">Build</text>
-<!-- Exchange -->
-<rect x="250" y="50" width="100" height="60" rx="8" fill="rgba(137,87,229,.1)" stroke="#8957e5" stroke-width="2"/>
-<text x="300" y="77" text-anchor="middle" font-size="13" font-weight="bold" fill="#8957e5">Exchange</text>
-<text x="300" y="93" text-anchor="middle" font-size="9" fill="var(--muted)">(Git/Queue)</text>
-<!-- Agent B (Review) -->
-<circle cx="450" cy="80" r="40" fill="rgba(63,185,80,.15)" stroke="var(--green)" stroke-width="2"/>
-<text x="450" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--green)">Agent B</text>
-<text x="450" y="92" text-anchor="middle" font-size="10" fill="var(--muted)">Review</text>
-<!-- Agent C (Research) -->
-<circle cx="300" cy="220" r="40" fill="rgba(210,153,34,.15)" stroke="var(--orange)" stroke-width="2"/>
-<text x="300" y="215" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--orange)">Agent C</text>
-<text x="300" y="232" text-anchor="middle" font-size="10" fill="var(--muted)">Research</text>
-<!-- Arrows -->
-<line x1="190" y1="80" x2="245" y2="80" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead)"/>
-<line x1="355" y1="80" x2="405" y2="80" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead)"/>
-<line x1="300" y1="115" x2="300" y2="175" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead)"/>
-<line x1="300" y1="175" x2="300" y2="115" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="4"/>
-</svg>
-<figcaption style="margin-top:1rem;font-size:.82rem;color:var(--muted);line-height:1.5"><span class="de">Multi-Agent Zusammenarbeit: Mehrere spezialisierte Agents kommunizieren über einen zentralen Exchange (z.B. Git-Repo oder Message Queue)</span><span class="en">Multi-Agent Collaboration: Multiple specialized agents communicate through a central exchange (e.g., Git repo or message queue)</span></figcaption>
+<figure style="max-width:700px;margin:1.5rem auto">
+<style>
+.viz-collab{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;padding:1.5rem;background:var(--surface);border:1px solid var(--border);border-radius:12px}
+.viz-agent{padding:.8rem 1rem;border-radius:50%;text-align:center;min-width:80px;border:2px solid;font-size:.82rem}
+.viz-agent-a{background:rgba(88,166,255,.1);color:var(--accent);border-color:var(--accent)}
+.viz-agent-b{background:rgba(63,185,80,.1);color:var(--green);border-color:var(--green)}
+.viz-agent-c{background:rgba(210,153,34,.1);color:var(--orange);border-color:var(--orange)}
+.viz-exchange{padding:.8rem 1.2rem;border-radius:8px;text-align:center;background:rgba(137,87,229,.1);border:2px solid #8957e5;color:#8957e5;font-weight:600;font-size:.85rem}
+.viz-exchange-sub{font-size:.7rem;color:var(--muted);font-weight:400}
+.viz-collab-arrow{color:var(--muted);font-size:1.3rem;font-weight:700}
+.viz-collab-row{display:flex;align-items:center;gap:.5rem;justify-content:center;width:100%}
+.viz-collab-col{display:flex;flex-direction:column;align-items:center;gap:.5rem}
+@media(max-width:600px){.viz-collab-row{flex-direction:column}.viz-collab-arrow{transform:rotate(90deg)}}
+</style>
+<div class="viz-collab">
+<div class="viz-collab-col" style="width:100%">
+<div class="viz-collab-row">
+<div class="viz-agent viz-agent-a"><strong>Agent A</strong><br><span style="font-size:.75rem"><span class="de">Build</span><span class="en">Build</span></span></div>
+<div class="viz-collab-arrow">⇄</div>
+<div class="viz-exchange"><span class="de">Exchange</span><span class="en">Exchange</span><br><span class="viz-exchange-sub">(Git / Queue)</span></div>
+<div class="viz-collab-arrow">⇄</div>
+<div class="viz-agent viz-agent-b"><strong>Agent B</strong><br><span style="font-size:.75rem"><span class="de">Review</span><span class="en">Review</span></span></div>
+</div>
+<div class="viz-collab-arrow">↕</div>
+<div class="viz-agent viz-agent-c"><strong>Agent C</strong><br><span style="font-size:.75rem"><span class="de">Research</span><span class="en">Research</span></span></div>
+</div>
+</div>
+<figcaption style="margin-top:1rem;font-size:.82rem;color:var(--muted);line-height:1.5"><span class="de">Multi-Agent Zusammenarbeit: Spezialisierte Agents kommunizieren über einen zentralen Exchange — jeder hat eine Rolle, keiner sieht alles.</span><span class="en">Multi-Agent Collaboration: Specialized agents communicate through a central exchange — each has a role, none sees everything.</span></figcaption>
 </figure>
 
 <div class="pattern-visual">
