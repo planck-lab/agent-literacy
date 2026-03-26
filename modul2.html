@@ -291,17 +291,33 @@
 
 <p><span class="de">In Modul 1 hast du die 2×2-Matrix kennengelernt. Jetzt erweitern wir sie mit einer entscheidenden dritten Dimension: <strong>Wie verifizierst du das Ergebnis?</strong></span><span class="en">In Module 1 you learned the 2×2 matrix. Now we expand it with a crucial third dimension: <strong>How do you verify the result?</strong></span></p>
 
-<div class="matrix-full">
-<div class="header"></div>
-<div class="header"><span class="de">Agent kann es</span><span class="en">Agent CAN</span></div>
-<div class="header"><span class="de">Agent kann es nicht</span><span class="en">Agent CANNOT</span></div>
-<div class="row-label"><span class="de">Risiko niedrig</span><span class="en">Low risk</span></div>
-<div class="cell-green"><span class="de">✅ Delegieren<br><small>Verifizierung: Stichprobe</small></span><span class="en">✅ Delegate<br><small>Verification: Spot check</small></span></div>
-<div class="cell-green"><span class="de">Mensch macht es<br><small>Agent kann assistieren</small></span><span class="en">Human does it<br><small>Agent can assist</small></span></div>
-<div class="row-label"><span class="de">Risiko hoch</span><span class="en">High risk</span></div>
-<div class="cell-yellow"><span class="de">⚠️ Mit Aufsicht<br><small>Verifizierung: Vollständig</small></span><span class="en">⚠️ With oversight<br><small>Verification: Complete</small></span></div>
-<div class="cell-red"><span class="de">❌ Nicht delegieren<br><small>Agent sammelt nur Daten</small></span><span class="en">❌ Don't delegate<br><small>Agent only gathers data</small></span></div>
+<figure style="max-width:700px;margin:1.5rem auto">
+<div class="viz-matrix">
+<div class="viz-matrix-header"></div>
+<div class="viz-matrix-header viz-matrix-col"><span class="de">Agent kann es</span><span class="en">Agent CAN</span></div>
+<div class="viz-matrix-header viz-matrix-col"><span class="de">Agent kann es nicht</span><span class="en">Agent CANNOT</span></div>
+<div class="viz-matrix-row-label"><span class="de">Risiko<br>niedrig</span><span class="en">Risk<br>Low</span></div>
+<div class="viz-matrix-cell viz-matrix-green"><span class="de">✅ <strong>Delegieren</strong><br><small>Verifizierung: Stichprobe</small></span><span class="en">✅ <strong>Delegate</strong><br><small>Verification: Spot check</small></span></div>
+<div class="viz-matrix-cell viz-matrix-yellow"><span class="de">Mensch macht es<br><small>Agent kann assistieren</small></span><span class="en">Human does it<br><small>Agent can assist</small></span></div>
+<div class="viz-matrix-row-label"><span class="de">Risiko<br>hoch</span><span class="en">Risk<br>High</span></div>
+<div class="viz-matrix-cell viz-matrix-orange"><span class="de">⚠️ <strong>Mit Aufsicht</strong><br><small>Verifizierung: Vollständig</small></span><span class="en">⚠️ <strong>With oversight</strong><br><small>Verification: Complete</small></span></div>
+<div class="viz-matrix-cell viz-matrix-red"><span class="de">❌ <strong>Nicht delegieren</strong><br><small>Agent sammelt nur Daten</small></span><span class="en">❌ <strong>Don't delegate</strong><br><small>Agent only gathers data</small></span></div>
 </div>
+<figcaption style="text-align:center;margin-top:1rem;font-size:.82rem;color:var(--muted)"><span class="de">Delegation Decision Matrix: Entscheide basierend auf Agent-Fähigkeit und Risiko</span><span class="en">Delegation Decision Matrix: Decide based on agent capability and risk</span></figcaption>
+</figure>
+
+<style>
+.viz-matrix{display:grid;grid-template-columns:auto 1fr 1fr;gap:0;font-size:.85rem;border-radius:8px;overflow:hidden}
+.viz-matrix>div{padding:.75rem;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;text-align:center}
+.viz-matrix-header{background:var(--surface);font-weight:700;font-size:.8rem}
+.viz-matrix-row-label{background:var(--surface);font-weight:600;font-size:.78rem;line-height:1.3}
+.viz-matrix-cell{min-height:90px;line-height:1.5}
+.viz-matrix-green{background:rgba(63,185,80,.12);border-color:var(--green)}
+.viz-matrix-yellow{background:rgba(210,153,34,.08);border-color:var(--orange)}
+.viz-matrix-orange{background:rgba(210,153,34,.12);border-color:var(--orange)}
+.viz-matrix-red{background:rgba(248,81,73,.12);border-color:#f85149}
+@media(max-width:600px){.viz-matrix{font-size:.75rem}.viz-matrix>div{padding:.5rem}}
+</style>
 
 <div class="callout blue">
 <strong><span class="de">Die Schlüsselfrage:</span><span class="en">The key question:</span></strong>
